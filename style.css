@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profiles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    margin-top: 30px;
+}
+.base-profile{
+
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+.base-profile:hover{
+    padding: 15px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px #545454;
+}
+.base-photo-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.base-profile img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.base-name-city{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.base-profile .name{
+    font-size: 22px;
+    font-weight: 800;
+}
+.base-profile .city{
+    font-size: 15px;
+    font-style: italic;
+}
+.base-profile .description{
+    text-align: justify;
+    padding-top: 15px;
+}
+@media (max-width:768px){
+    .profiles{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:20px;
+        padding: 0px 30px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .profiles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+        padding: 0px 30px;
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width:1200px){
+    .profiles{
+        padding: 30px 30px;
+
+    }
+}
+
